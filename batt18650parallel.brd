@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
@@ -22,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -166,6 +180,8 @@
 <text x="1.27" y="39.37" size="3.81" layer="21">-</text>
 <text x="1.27" y="16.51" size="3.81" layer="21">-</text>
 <text x="46.99" y="46.99" size="1.778" layer="21">Batteries in Parallel (1S2P)</text>
+<text x="52.832" y="50.165" size="3.81" layer="21">+</text>
+<text x="46.99" y="50.292" size="3.81" layer="21">-</text>
 </plain>
 <libraries>
 <library name="Keystone - 1042">
@@ -267,39 +283,7 @@ Created by Upverter.com</description>
 <text x="-1.397" y="1.778" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-1.651" y="0.635" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
-<package name="SCREWTERMINAL-3.5MM-2_LOCK">
-<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch - 2 Pin PTH Locking&lt;/h3&gt;
-Holes are offset from center 0.005" to hold pins in place during soldering. 
-&lt;p&gt;Specifications:
-&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
-&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;Example device(s):
-&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<wire x1="-1.75" y1="3.4" x2="5.25" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="3.4" x2="5.25" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-2.8" x2="5.25" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
-<wire x1="5.25" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="-1.35" x2="-2.15" y2="-1.35" width="0.2032" layer="51"/>
-<wire x1="-2.15" y1="-1.35" x2="-2.15" y2="-2.35" width="0.2032" layer="51"/>
-<wire x1="-2.15" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
-<wire x1="5.25" y1="3.15" x2="5.65" y2="3.15" width="0.2032" layer="51"/>
-<wire x1="5.65" y1="3.15" x2="5.65" y2="2.15" width="0.2032" layer="51"/>
-<wire x1="5.65" y1="2.15" x2="5.25" y2="2.15" width="0.2032" layer="51"/>
-<circle x="2" y="3" radius="0.2828" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="0.4318" width="0.0254" layer="51"/>
-<circle x="3.5" y="0" radius="0.4318" width="0.0254" layer="51"/>
-<pad name="1" x="-0.1778" y="0" drill="1.2" diameter="2.032" shape="square"/>
-<pad name="2" x="3.6778" y="0" drill="1.2" diameter="2.032"/>
-<text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
-<text x="-1.27" y="1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
-</package>
-<package name="1X02_2.54_SCREWTERM">
+<package name="1X02_2.54_SCREWTERM_ROUND">
 <description>&lt;h3&gt;2 Pin Screw Terminal - 2.54mm&lt;/h3&gt;
 &lt;p&gt;Specifications:
 &lt;ul&gt;&lt;li&gt;Pin count:2&lt;/li&gt;
@@ -308,7 +292,7 @@ Holes are offset from center 0.005" to hold pins in place during soldering.
 &lt;p&gt;Example device(s):
 &lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
 &lt;/ul&gt;&lt;/p&gt;</description>
-<pad name="P2" x="-1.27" y="0" drill="1.016" shape="square"/>
+<pad name="P2" x="-1.27" y="0" drill="1.016"/>
 <pad name="P1" x="1.27" y="0" drill="1.016"/>
 <wire x1="-2.77" y1="3.3" x2="2.73" y2="3.3" width="0.2032" layer="21"/>
 <wire x1="2.73" y1="3.3" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
@@ -319,6 +303,35 @@ Holes are offset from center 0.005" to hold pins in place during soldering.
 <wire x1="-2.77" y1="2.5" x2="2.73" y2="2.5" width="0.2032" layer="21"/>
 <text x="-2.54" y="3.429" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
 <text x="-2.54" y="-4.064" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+<package name="SCREWTERMINAL-3.5MM-2_ROUND">
+<description>&lt;h3&gt;Screw Terminal  3.5mm Pitch - 2 Pin PTH&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 2&lt;/li&gt;
+&lt;li&gt;Pin pitch: 3.5mm/138mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-3.5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_02&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<circle x="2" y="3" radius="0.2828" width="0.127" layer="51"/>
+<wire x1="-1.75" y1="3.4" x2="5.25" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="3.4" x2="5.25" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="5.25" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-3.6" x2="-1.75" y2="-3.6" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-3.6" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-2.8" x2="-1.75" y2="3.4" width="0.2032" layer="21"/>
+<wire x1="5.25" y1="-2.8" x2="-1.75" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-1.75" y1="-1.35" x2="-2.25" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.35" x2="-2.25" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-2.35" x2="-1.75" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="5.25" y1="3.15" x2="5.75" y2="3.15" width="0.2032" layer="51"/>
+<wire x1="5.75" y1="3.15" x2="5.75" y2="2.15" width="0.2032" layer="51"/>
+<wire x1="5.75" y1="2.15" x2="5.25" y2="2.15" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.2" diameter="2.032"/>
+<pad name="2" x="3.5" y="0" drill="1.2" diameter="2.032"/>
+<text x="-1.27" y="2.54" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
 </package>
 <package name="4_40">
 <description>&lt;p&gt;&lt;b&gt;4x40 Non-Plated Mounting Hole &lt;/b&gt;
@@ -518,7 +531,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 </pass>
 </autorouter>
 <elements>
-<element name="BT1" library="Keystone - 1042" package="KEYSTONE_1042_0" value="KEYSTONE_1042KEYSTONE_1042_0_0" x="45.72" y="11.43">
+<element name="BT1" library="Keystone - 1042" package="KEYSTONE_1042_0" value="KEYSTONE_1042KEYSTONE_1042_0_0" x="45.72" y="11.43" smashed="yes">
 <attribute name="CENTROID_NOT_SPECIFIED" value="No" x="102.87" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="http://www.keyelco.com/product-pdf.cfm?p=918" x="102.87" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_DESCRIPTION" value="BATT HOLDER BATTERY 1CELL 18650 SMD" x="102.87" y="0" size="1.778" layer="27" display="off"/>
@@ -532,7 +545,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PREFIX" value="BT" x="102.87" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS" value="yes" x="102.87" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="BT2" library="Keystone - 1042" package="KEYSTONE_1042_0" value="KEYSTONE_1042KEYSTONE_1042_0_0" x="45.72" y="34.29">
+<element name="BT2" library="Keystone - 1042" package="KEYSTONE_1042_0" value="KEYSTONE_1042KEYSTONE_1042_0_0" x="45.72" y="34.29" smashed="yes">
 <attribute name="CENTROID_NOT_SPECIFIED" value="No" x="102.87" y="-1.27" size="1.778" layer="27" display="off"/>
 <attribute name="DATASHEET" value="http://www.keyelco.com/product-pdf.cfm?p=918" x="102.87" y="-1.27" size="1.778" layer="27" display="off"/>
 <attribute name="DIGIKEY_DESCRIPTION" value="BATT HOLDER BATTERY 1CELL 18650 SMD" x="102.87" y="-1.27" size="1.778" layer="27" display="off"/>
@@ -546,64 +559,58 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="PREFIX" value="BT" x="102.87" y="-1.27" size="1.778" layer="27" display="off"/>
 <attribute name="ROHS" value="yes" x="102.87" y="-1.27" size="1.778" layer="27" display="off"/>
 </element>
-<element name="J1" library="bschulz" package="1X02_2.54_SCREWTERM" value="" x="78.74" y="58.42">
-<attribute name="DIGIKEY" value="ED10561-ND" x="78.74" y="58.42" size="1.778" layer="27" display="off"/>
-<attribute name="MF" value="OnShore" x="78.74" y="58.42" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="OSTVN02A150" x="78.74" y="58.42" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="77.47" y="55.499" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="VALUE" x="77.47" y="54.356" size="0.6096" layer="27" font="vector" ratio="20"/>
+<element name="J1" library="bschulz" package="1X02_2.54_SCREWTERM_ROUND" value="" x="78.74" y="58.42" smashed="yes" rot="R180">
+<attribute name="NAME" x="75.692" y="60.833" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="80.01" y="62.484" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
-<element name="S2" library="100SP1T2B4M6QE" package="100SP1T2B4M6QE" value="100SP1T2B4M6QE" x="38.1" y="49.53" rot="R90">
+<element name="S2" library="100SP1T2B4M6QE" package="100SP1T2B4M6QE" value="100SP1T2B4M6QE" x="38.1" y="49.53" smashed="yes" rot="R90">
 <attribute name="DESCRIPTION" value="E-SWITCH - 100SP1T2B4M6QE - SWITCH, TOGGLE, SPDT, 5A, 120VAC, 28VDC" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HEIGHT" value="6.86mm" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="E-Switch" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="100SP1T2B4M6QE" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PART_NUMBER" value="612-100-A2461" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.com/Search/Refine.aspx?Keyword=612-100-A2461" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="26.02" y="54.23" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="NAME" x="42.29" y="47.61" size="1.27" layer="25" rot="R180" align="center"/>
 <attribute name="RS_PART_NUMBER" value="" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="RS_PRICE-STOCK" value="" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="26.02" y="54.23" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
-<element name="J2" library="bschulz" package="JST-2-SMD" value="" x="50.8" y="58.547">
-<attribute name="NAME" x="49.403" y="60.325" size="0.6096" layer="25" font="vector" ratio="20"/>
+<element name="J2" library="bschulz" package="JST-2-SMD" value="" x="50.8" y="58.547" smashed="yes">
+<attribute name="NAME" x="46.355" y="60.833" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-11443" x="50.8" y="58.547" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="49.149" y="59.182" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="J3" library="bschulz" package="SCREWTERMINAL-3.5MM-2_LOCK" value="" x="63.5" y="58.42">
-<attribute name="NAME" x="62.23" y="60.96" size="0.6096" layer="25" font="vector" ratio="20"/>
-<attribute name="PROD_ID" value="CONN-08399" x="63.5" y="58.42" size="1.778" layer="27" display="off"/>
+<element name="J3" library="bschulz" package="SCREWTERMINAL-3.5MM-2_ROUND" value="" x="63.5" y="58.42" smashed="yes">
+<attribute name="NAME" x="61.468" y="60.833" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="62.23" y="59.69" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
-<element name="H1" library="bschulz" package="4_40" value="" x="3.81" y="58.42"/>
-<element name="H2" library="bschulz" package="4_40" value="" x="3.81" y="3.81"/>
-<element name="H3" library="bschulz" package="4_40" value="" x="87.63" y="58.42"/>
-<element name="H4" library="bschulz" package="4_40" value="" x="87.63" y="3.81"/>
+<element name="H1" library="bschulz" package="4_40" value="" x="3.81" y="58.42" smashed="yes"/>
+<element name="H2" library="bschulz" package="4_40" value="" x="3.81" y="3.81" smashed="yes"/>
+<element name="H3" library="bschulz" package="4_40" value="" x="87.63" y="58.42" smashed="yes"/>
+<element name="H4" library="bschulz" package="4_40" value="" x="87.63" y="3.81" smashed="yes"/>
 </elements>
 <signals>
 <signal name="VCC">
-<contactref element="J3" pad="2"/>
-<contactref element="J2" pad="1"/>
 <contactref element="S2" pad="2"/>
-<wire x1="38.1" y1="54.23" x2="38.717" y2="54.847" width="1.2192" layer="1"/>
-<wire x1="38.717" y1="54.847" x2="49.8" y2="54.847" width="1.2192" layer="1"/>
-<contactref element="J1" pad="P1"/>
-<wire x1="49.8" y1="54.847" x2="49.8" y2="51.8" width="1.2192" layer="1"/>
-<wire x1="49.8" y1="51.8" x2="50.8" y2="50.8" width="1.2192" layer="1"/>
-<wire x1="59.5578" y1="50.8" x2="67.1778" y2="58.42" width="1.2192" layer="1"/>
-<wire x1="50.8" y1="50.8" x2="59.5578" y2="50.8" width="1.2192" layer="1"/>
-<wire x1="67.1778" y1="58.42" x2="73.66" y2="58.42" width="1.2192" layer="1"/>
-<wire x1="73.66" y1="58.42" x2="76.2" y2="55.88" width="1.2192" layer="1"/>
-<wire x1="76.2" y1="55.88" x2="78.74" y2="55.88" width="1.2192" layer="1"/>
-<wire x1="78.74" y1="55.88" x2="80.01" y2="57.15" width="1.2192" layer="1"/>
-<wire x1="80.01" y1="57.15" x2="80.01" y2="58.42" width="1.2192" layer="1"/>
+<contactref element="J2" pad="2"/>
+<wire x1="38.1" y1="54.23" x2="44.195" y2="54.23" width="1.016" layer="1"/>
+<wire x1="46.863" y1="51.562" x2="50.8" y2="51.562" width="1.016" layer="1"/>
+<wire x1="50.8" y1="51.562" x2="51.8" y2="52.562" width="1.016" layer="1"/>
+<wire x1="51.8" y1="52.562" x2="51.8" y2="54.847" width="1.016" layer="1"/>
+<wire x1="44.195" y1="54.23" x2="46.863" y2="51.562" width="1.016" layer="1"/>
+<contactref element="J1" pad="P2"/>
+<contactref element="J3" pad="2"/>
+<wire x1="38.1" y1="54.23" x2="62.81" y2="54.23" width="1.27" layer="16"/>
+<wire x1="62.81" y1="54.23" x2="67" y2="58.42" width="1.27" layer="16"/>
+<wire x1="68.5732125" y1="56.8706" x2="78.4927875" y2="56.8706" width="1.27" layer="1"/>
+<wire x1="80.01" y1="58.42" x2="80.01" y2="58.3878125" width="1.27" layer="1"/>
+<wire x1="80.01" y1="58.3878125" x2="78.4927875" y2="56.8706" width="1.27" layer="1"/>
+<wire x1="67" y1="58.42" x2="67.0238125" y2="58.42" width="1.27" layer="1"/>
+<wire x1="67.0238125" y1="58.42" x2="68.5732125" y2="56.8706" width="1.27" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="BT1" pad="1"/>
 <contactref element="BT2" pad="1"/>
 <contactref element="S2" pad="3"/>
-<contactref element="J3" pad="1"/>
-<contactref element="J2" pad="2"/>
 <wire x1="6.05" y1="34.29" x2="6.05" y2="11.43" width="1.2192" layer="1"/>
 <contactref element="S2" pad="MH1"/>
 <contactref element="S2" pad="MH2"/>
@@ -611,22 +618,22 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <wire x1="25.4" y1="56.77" x2="27.56" y2="58.93" width="1.2192" layer="1"/>
 <wire x1="27.56" y1="58.93" x2="38.1" y2="58.93" width="1.2192" layer="1"/>
 <wire x1="38.9756" y1="58.93" x2="38.1" y2="58.93" width="1.2192" layer="1"/>
-<wire x1="65.4966" y1="60.5944" x2="63.3222" y2="58.42" width="1.2192" layer="1"/>
-<wire x1="46.28436875" y1="57.585" x2="48.51563125" y2="57.585" width="1.2192" layer="1"/>
-<wire x1="38.1" y1="58.93" x2="44.93936875" y2="58.93" width="1.2192" layer="1"/>
-<wire x1="49.86063125" y1="58.93" x2="50.29" y2="58.93" width="1.2192" layer="1"/>
-<wire x1="44.93936875" y1="58.93" x2="46.28436875" y2="57.585" width="1.2192" layer="1"/>
-<wire x1="48.51563125" y1="57.585" x2="49.86063125" y2="58.93" width="1.2192" layer="1"/>
-<wire x1="51.8" y1="57.42" x2="51.8" y2="54.847" width="1.2192" layer="1"/>
-<wire x1="50.29" y1="58.93" x2="51.8" y2="57.42" width="1.2192" layer="1"/>
-<wire x1="63.3222" y1="58.42" x2="62.3222" y2="57.42" width="1.2192" layer="1"/>
-<wire x1="62.3222" y1="57.42" x2="51.8" y2="57.42" width="1.2192" layer="1"/>
-<contactref element="J1" pad="P2"/>
 <wire x1="6.05" y1="34.29" x2="6.484971875" y2="34.29" width="1.2192" layer="1"/>
 <wire x1="6.484971875" y1="34.29" x2="9.0712875" y2="35.3612875" width="1.2192" layer="1" curve="45.000035"/>
 <wire x1="9.0712875" y1="35.3612875" x2="25.4" y2="51.69" width="1.2192" layer="1"/>
-<wire x1="77.47" y1="58.42" x2="75.2956" y2="60.5944" width="1.2192" layer="1"/>
-<wire x1="75.2956" y1="60.5944" x2="65.4966" y2="60.5944" width="1.2192" layer="1"/>
+<contactref element="J2" pad="1"/>
+<wire x1="38.1" y1="58.93" x2="42.67136875" y2="58.93" width="1.016" layer="1"/>
+<wire x1="46.75436875" y1="54.847" x2="49.8" y2="54.847" width="1.016" layer="1"/>
+<wire x1="42.67136875" y1="58.93" x2="46.75436875" y2="54.847" width="1.016" layer="1"/>
+<contactref element="J1" pad="P1"/>
+<contactref element="J3" pad="1"/>
+<wire x1="38.1" y1="58.93" x2="62.99" y2="58.93" width="1.27" layer="16"/>
+<wire x1="62.99" y1="58.93" x2="63.5" y2="58.42" width="1.27" layer="16"/>
+<wire x1="65.23700625" y1="60.2234" x2="75.74799375" y2="60.2234" width="1.27" layer="1"/>
+<wire x1="65.23700625" y1="60.2234" x2="63.5" y2="58.48639375" width="1.27" layer="1"/>
+<wire x1="63.5" y1="58.42" x2="63.5" y2="58.48639375" width="1.27" layer="1"/>
+<wire x1="77.47" y1="58.42" x2="77.47" y2="58.50139375" width="1.27" layer="1"/>
+<wire x1="77.47" y1="58.50139375" x2="75.74799375" y2="60.2234" width="1.27" layer="1"/>
 <wire x1="25.4" y1="57.15" x2="25.4" y2="56.77" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="B+">
