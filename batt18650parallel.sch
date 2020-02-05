@@ -1147,6 +1147,9 @@ Right angle, 2 position, female</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="DIGIKEY" value="455-1749-1-ND" constant="no"/>
+<attribute name="MF" value="JST" constant="no"/>
+<attribute name="MPN" value="S2B-PH-SM4-TB(LF)(SN)" constant="no"/>
 <attribute name="PROD_ID" value="CONN-11443"/>
 </technology>
 </technologies>
@@ -1363,7 +1366,11 @@ Right angle, 2 position, female</description>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED2635-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTTE020161" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="2.54_SCREW_ROUND" package="1X02_2.54_SCREWTERM_ROUND">
@@ -1372,7 +1379,11 @@ Right angle, 2 position, female</description>
 <connect gate="G$1" pin="2" pad="P2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="DIGIKEY" value="ED10561-ND" constant="no"/>
+<attribute name="MF" value="OnShore" constant="no"/>
+<attribute name="MPN" value="OSTVN02A150" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

@@ -560,6 +560,9 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="ROHS" value="yes" x="102.87" y="-1.27" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J1" library="bschulz" package="1X02_2.54_SCREWTERM_ROUND" value="" x="78.74" y="58.42" smashed="yes" rot="R180">
+<attribute name="DIGIKEY" value="ED10561-ND" x="78.74" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MF" value="OnShore" x="78.74" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="OSTVN02A150" x="78.74" y="58.42" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="75.692" y="60.833" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="80.01" y="62.484" size="0.6096" layer="27" font="vector" ratio="20" rot="R180"/>
 </element>
@@ -575,11 +578,17 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <attribute name="RS_PRICE-STOCK" value="" x="38.1" y="49.53" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="J2" library="bschulz" package="JST-2-SMD" value="" x="50.8" y="58.547" smashed="yes">
+<attribute name="DIGIKEY" value="455-1749-1-ND" x="50.8" y="58.547" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="JST" x="50.8" y="58.547" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="S2B-PH-SM4-TB(LF)(SN)" x="50.8" y="58.547" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="46.355" y="60.833" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="PROD_ID" value="CONN-11443" x="50.8" y="58.547" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="49.149" y="59.182" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
 <element name="J3" library="bschulz" package="SCREWTERMINAL-3.5MM-2_ROUND" value="" x="63.5" y="58.42" smashed="yes">
+<attribute name="DIGIKEY" value="ED2635-ND" x="63.5" y="58.42" size="1.778" layer="27" display="off"/>
+<attribute name="MF" value="OnShore" x="63.5" y="58.42" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="OSTTE020161" x="63.5" y="58.42" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="61.468" y="60.833" size="0.6096" layer="25" font="vector" ratio="20" rot="R90"/>
 <attribute name="VALUE" x="62.23" y="59.69" size="0.6096" layer="27" font="vector" ratio="20"/>
 </element>
